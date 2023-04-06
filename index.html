@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Shop</title>
+    <link rel="icon" href="./assets/img/piano_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link href="./assets/icon/themify-icons/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="quickview__overlay"></div>
+        <div class="header">
+            <div class="grid wide">
+                <div class="row header__top">
+
+                    <div class="header__top-logo col l-3">
+                        <a href="#" class="header__top-logo-link">
+                            <img src="./assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+    
+                    <div class="header__top-search col l-6">
+                            <div class="header__top-search-right">
+                                <input type="text" placeholder="Search for items...." class="header__top-search-input">
+                                <i class="fa-solid fa-magnifying-glass header__top-search-icon"></i>
+                            </div>
+                    </div>
+    
+                    <div class="header__top-right col l-3">
+                        <div class="header__top-wishlist">
+                            <span class="ti-heart header__top-wishlist-icon"></span>
+                            <span class="header__top-wishlist-quantity">6</span>
+                            <span class="header__top-wishlist-text">Wishlist</span>
+                        </div>
+    
+                        <div class="header__top-cart">
+                            <!-- <i class="fa-solid fa-cart-shopping header__top-cart-icon"></i> -->
+
+                            <span class="ti-shopping-cart header__top-cart-icon"></span>
+                            <span class="header__top-cart-quantity">3</span>
+                            <span class="header__top-cart-text">Cart</span>
+    
+                            <div class="header__top-cart-category">
+                                <ul class="header__top-cart-list">
+                                    <li class="header__top-cart-item">
+                                        <img src="./assets/img/p2.jpg" alt="" class="">
+                                        <div class="header__top-cart-product">
+                                            <p class="cart__product-name">Yamaha CDP400</p>
+                                            <p class="cart__product-price">1 x $800.00</p>
+                                        </div>
+                                        <span class="ti-close cart__item-icon"></span>
+                                    </li>
+                                    <li class="header__top-cart-item">
+                                        <img src="./assets/img/p2.jpg" alt="" class="">
+                                        <div class="header__top-cart-product">
+                                            <p class="cart__product-name">Yamaha CDP400</p>
+                                            <p class="cart__product-price">1 x $800.00</p>
+                                        </div>
+                                        <span class="ti-close cart__item-icon"></span>
+                                    </li>
+                                </ul>
+
+                                <div class="cart__total">
+                                    <div class="cart__total-price">
+                                        <span class="cart__total-price-text">Total</span>
+                                        <span class="cart__total-price-number">$1600.00</span>
+                                    </div>
+                                    <div class="cart__total-btn">
+                                        <button class="cart__total-btn-view">View Cart</button>
+                                        <button class="cart__total-btn-check">Check Out</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="header__top-account">
+                            <!-- <i class="fa-solid fa-user header__top-account-icon"></i> -->
+                            <span class="ti-user header__top-account-icon"></span>
+                            <span class="header__top-account-text">Account</span>
+                            <ul class="header__top-account-list">
+                                <li class="header__top-account-item">
+                                    <span class="ti-user"></span>
+                                    <a href="#" class="header__top-account-link">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__top-account-item">
+                                    <span class="ti-ticket"></span>
+                                    <a href="#" class="header__top-account-link">Mã giảm giá</a>
+                                </li>
+                                <li class="header__top-account-item">
+                                    <span class="ti-settings"></span>
+                                    <a href="#" class="header__top-account-link">Cài đặt</a>
+                                </li>
+                                <li class="header__top-account-item">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                    <a href="#" class="header__top-account-link">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+    
+                <div class="row header__bot">
+                    <div class="header__bot-category col l-2" style="padding-right: 0;">
+                        <div class="header__bot-category-btn">
+                            <span class="ti-layout-grid2 category__btn-icon"></span>
+                            <span class="category__btn-text">Browse All Categories</span>
+                            <span class="ti-angle-down category__btn-arrow-down"></span>
+                            <span class="ti-angle-up category__btn-arrow-up display--none"></span>
+                        </div>
+
+                        <div class="header__bot-category-list display--none">
+                            <div class="header__bot-category-list-top">
+                                <div class="category__bot-list ct-left">
+                                    <div class="category__bot-left-item">
+                                        <img src="./assets/img/piano_logo.png" class="category__bot-item-img" alt="">
+                                        <span class="category__bot-item-name">Đàn Piano</span>
+                                    </div>
+                                    <div class="category__bot-left-item">
+                                        <img src="./assets/img/cajon_logo.png" class="category__bot-item-img" alt="">
+                                        <span class="category__bot-item-name">Trống Cajon</span>
+                                    </div>
+                                    <div class="category__bot-left-item">
+                                        <img src="./assets/img/accessory_logo.png" class="category__bot-item-img" alt="">
+                                        <span class="category__bot-item-name">Các loại phụ kiện</span>
+                                    </div>
+                                </div>
+        
+                                <div class="category__bot-list ct-right">
+                                    <div class="category__bot-right-item">
+                                        <img src="./assets/img/organ_logo.png" class="category__bot-item-img" alt="">
+                                        <span class="category__bot-item-name">Đàn Organ</span>
+                                    </div>
+                                    <div class="category__bot-right-item">
+                                        <img src="./assets/img/guitar_logo.png" class="category__bot-item-img" alt="">
+                                        <span class="category__bot-item-name">Đàn Guitar</span>
+                                    </div>
+                                    <div class="category__bot-right-item">
+                                        <img src="./assets/img/saxophone_logo.png" class="category__bot-item-img" alt="">
+                                        <span class="category__bot-item-name">Kèn Saxophone</span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="category__bot-show">
+                                <div class="category__bot-show-icon">
+                                    <span class="ti-plus icon--plus"></span>
+                                    <i class="fa-regular fa-circle icon--circle"></i>
+                                </div>
+                                <span class="category__bot-show-text">
+                                    Show more...
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__bot-menu col l-8">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <i class="fa-solid fa-fire menu__list-item-deal" style="color: var(--primary-color);"></i>
+                                <a href="#" class="menu__list-item-name">Deals</a>
+                            </li>
+                            <li class="menu__list-item item--home">
+                                <a href="#" class="menu__list-item-name" style="color: var(--primary-color);">Home</a>
+                                <span class="ti-angle-down menu__list-item-icon" style="color: var(--primary-color);"></span>
+                                <div class="header__bot-menu-home">
+                                    <ul class="menu__list-home">
+                                        <li class="menu__list-home-item">
+                                            <a href="#" class="menu__list-home-link">Home 1</a>
+                                        </li>
+                                        <li class="menu__list-home-item">
+                                            <a href="#" class="menu__list-home-link">Home 2</a>
+                                        </li>
+                                        <li class="menu__list-home-item">
+                                            <a href="#" class="menu__list-home-link">Home 3</a>
+                                        </li>
+                                        <li class="menu__list-home-item">
+                                            <a href="#" class="menu__list-home-link">Home 4</a>
+                                        </li>
+                                        <li class="menu__list-home-item">
+                                            <a href="#" class="menu__list-home-link">Home 5</a>
+                                        </li>
+                                        <li class="menu__list-home-item">
+                                            <a href="#" class="menu__list-home-link">Home 6</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-item-name">About</a>
+                            </li>
+                            <li class="menu__list-item item--shop">
+                                <a href="#" class="menu__list-item-name">Shop</a>
+                                <span class="ti-angle-down menu__list-item-icon"></span>
+                                <div class="row header__bot-menu-shop">
+                                    <ul class="menu__list-item-shop l-2">
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Đàn Piano</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Piano Casio</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Piano Roland</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Piano Yamaha</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Piano Steinway & Sons</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu__list-item-shop l-2">
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Đàn Guitar</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Guitar Yamaha</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Guitar Ba Đờn</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Guitar Trần</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Guitar Takemine</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu__list-item-shop l-2">
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Phụ kiện</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Capo</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Dây đàn</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Giá nhạc</a>
+                                        </li>
+                                        <li class="header__bot-shop-item">
+                                            <a href="#" class="header__bot-shop-link">Máy Tempo</a>
+                                        </li>
+                                    </ul>
+                                    <div class="header__bot-shop-img l-6">
+                                        <img src="./assets/img/11.png" alt="" class="shop-img--image">
+                                        <p class="shop-img--hotdeal">HOT DEALS</p>
+                                        <div class="shop-img--trending">
+                                            <p class="shop-img--trending-top">Don't miss</p>
+                                            <p class="shop-img--trending-bot">Trending</p>
+                                        </div>
+                                        
+                                        <div class="shop-img--sale">
+                                            <p class="shop-img--sale-top">25%</p>
+                                            <p class="shop-img--sale-bot">off</p>
+                                        </div>
+                                        <p class="shop-img--save">Save to 50%</p> 
+                                        <button class="shop-img--btn">Shop now</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__list-item item--blog">
+                                <a href="#" class="menu__list-item-name">Blog</a>
+                                <span class="ti-angle-down menu__list-item-icon"></span>
+                                <div class="header__bot-menu-blog">
+                                    <ul class="menu__list-blog">
+                                        <li class="menu__list-blog-item">
+                                            <a href="#" class="menu__list-blog-link">Tìm hiểu về đàn Piano</a>
+                                        </li>
+                                        <li class="menu__list-blog-item">
+                                            <a href="#" class="menu__list-blog-link">Đàn Guitar là gì ?</a>
+                                        </li>
+                                        <li class="menu__list-blog-item">
+                                            <a href="#" class="menu__list-blog-link">Cách chơi đàn Organ</a>
+                                        </li>
+                                        <li class="menu__list-blog-item">
+                                            <a href="#" class="menu__list-blog-link">Chơi nhạc cụ cần những yếu tố gì ?</a>
+                                        </li>
+                                        <li class="menu__list-blog-item">
+                                            <a href="#" class="menu__list-blog-link">Chọn phụ kiện sao cho phù hợp</a>
+                                        </li>
+                                        <li class="menu__list-blog-item">
+                                            <a href="#" class="menu__list-blog-link">Diễn đàn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="#" class="menu__list-item-name">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__bot-contact col l-2">
+                        <div class="header__bot-phonenumber">
+                            <span class="ti-headphone-alt header__bot-phonenumber-icon"></span>
+                            <div class="header__bot-phonenumber-text">
+                                <p class="phonenumber-text-top">0848160901</p>
+                                <p class="phonenumber-text-bot">24/7 Support Center</p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider-item slider-active" data-index="0">
+                        <img src="./assets/img/banner-1.jpg" class="slider-img l-12" alt="Image...">
+                    </div>
+                    <div class="slider-item" data-index="1">
+                        <img src="./assets/img/banner-2.jpg" class="slider-img l-12" alt="Image...">
+                    </div>
+                    <div class="slider-item" data-index="2">
+                        <img src="./assets/img/banner-3.jpg" class="slider-img l-12" alt="Image...">
+                    </div>    
+                </div>
+    
+                <div class="arrow-left">
+                    <i class="fa-solid fa-angle-left prev-btn"></i>
+                </div>
+        
+                <div class="arrow-right">
+                    <i class="fa-solid fa-angle-right next-btn"></i>
+                </div>
+        
+                <div class="circle">
+                    <i class="fa-regular fa-circle circle-btn circle-active" data-index="0"></i>
+                    <i class="fa-regular fa-circle circle-btn" data-index="1"></i>
+                    <i class="fa-regular fa-circle circle-btn" data-index="2"></i>
+                </div>
+            </div>
+
+            <div style="padding: 50px 0;" class="best-choice">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3">
+                            <div class="best-choice__item">
+                                <div class="best-choice__item-icon">
+                                    <img src="./assets/img/choice-1.png" alt="">
+                                </div>
+                                <div class="best-choive__item-des">
+                                    <p class="best-choice__item-des-top">MỨC GIÁ</p>
+                                    <p class="best-choice__item-des-bot">Tốt nhất thị trường</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="best-choice__item">
+                                <div class="best-choice__item-icon">
+                                    <img src="./assets/img/choice-2.png" alt="">
+                                </div>
+                                <div class="best-choive__item-des">
+                                    <p class="best-choice__item-des-top">VẬN CHUYỂN</p>
+                                    <p class="best-choice__item-des-bot">Chuyên nghiệp - Nhanh chóng</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="best-choice__item">
+                                <div class="best-choice__item-icon">
+                                    <img src="./assets/img/choice-3.png" alt="">
+                                </div>
+                                <div class="best-choive__item-des">
+                                    <p class="best-choice__item-des-top">BẢO HÀNH</p>
+                                    <p class="best-choice__item-des-bot">Uy tín - Chất lượng</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3">
+                            <div class="best-choice__item">
+                                <div class="best-choice__item-icon">
+                                    <img src="./assets/img/choice-4.png" alt="">
+                                </div>
+                                <div class="best-choive__item-des">
+                                    <p class="best-choice__item-des-top">TRẢ GÓP</p>
+                                    <p class="best-choice__item-des-bot">Trả góp lãi suất 0%</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="big-catalog">
+                <div class="grid wide">
+                    <div class="main-title">
+                        <p>Featured Categories</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image one">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Đàn Piano</p>
+
+                        </div>
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image two">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Đàn Organ, Keyboard</p>
+
+                        </div>
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image three">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Đàn Guitar</p>
+
+                        </div>
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image four">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Đàn Ukulele</p>
+
+                        </div>
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image five">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Trống Cajon</p>
+
+                        </div>
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image six">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Kèn Harmonica</p>
+
+                        </div>
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image seven">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Loa Guitar</p>
+
+                        </div>
+                        <div class="big-catalog__product-list col l-4">
+                            <div class="big-catalog__image eight">
+                            </div>
+
+                            <p class="big-catalog__des"> <span class="ti-angle-double-right"></span> Phụ kiện</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 300px;" class="popular-product">
+                <div class="popular-product__item-quickview">
+                    <div class="popular-product__item-quickview-left">
+                        <div class="quickview-left__image">
+                            <div class="quickview-left__image-wrapper">
+                                <div class="qv-image__item qv-image-active" data-index="0">
+                                    <img src="./assets/img/popular-product/pp_piano.jpg" class="qv-image__item-img" alt="Image...">
+                                </div>
+                                <div class="qv-image__item" data-index="1">
+                                    <img src="./assets/img/quick-view/qv_piano-1.jpg" class="qv-image__item-img" alt="Image...">
+                                </div>
+                                <div class="qv-image__item" data-index="1">
+                                    <img src="./assets/img/quick-view/qv_piano-2.jpg" class="qv-image__item-img" alt="Image...">
+                                </div>
+                                <div class="qv-image__item" data-index="2">
+                                    <img src="./assets/img/quick-view/qv_piano-3.jpg" class="qv-image__item-img" alt="Image...">
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="quickview-left__select">
+                            <img src="./assets/img/popular-product/pp_piano.jpg" class="qv-select_image qv-select-active" alt="">
+                            <img src="./assets/img/quick-view/qv_piano-1.jpg" class="qv-select_image" alt="">
+                            <img src="./assets/img/quick-view/qv_piano-2.jpg" class="qv-select_image" alt="">
+                            <img src="./assets/img/quick-view/qv_piano-3.jpg" class="qv-select_image" alt="">
+                            <div class="qv-arrow-left">
+                                <span class="ti-arrow-left qv-prev-btn"></span>
+                            </div>
+                    
+                            <div class="qv-arrow-right">
+                                <span class="ti-arrow-right qv-next-btn"></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <p class="ti-close quickview__close-icon"></p>
+                    <div class="popular-product__item-quickview-right">
+                        <p class="quickview-right__saleoff">
+                            Sale Off
+                        </p>
+
+                        <h1 class="quickview-right__name">
+                            Yamaha CLP-270
+                        </h1>
+
+                        <div class="quickview-right__rate">
+                            <i class="fas fa-star rate_stars-icon star--gold"></i>
+                            <i class="fas fa-star rate_stars-icon star--gold"></i>
+                            <i class="fas fa-star rate_stars-icon star--gold"></i>
+                            <i class="fas fa-star rate_stars-icon star--gold"></i>
+                            <i class="fas fa-star rate_stars-icon"></i>
+                            <span>(32 reviews)</span>
+                        </div>
+
+                        <div class="quickview-right__price">
+                            <span class="quickview-right__price-discounted">$499</span>
+                            <span class="quickview-right__price-initial">$599</span>
+                        </div>
+
+                        <div class="quickview-right__cart">
+                            <div class="quickview-right__cart-quantity">
+                                <span class="ti-minus quickview-right__cart-quantity-icon"></span>
+                                <span class="quickview-right__cart-quantity-number">1</span>
+                                <span class="ti-plus quickview-right__cart-quantity-icon"></span> 
+
+                            </div>
+                            <div class="quickview-right__cart-button">
+                                <span class="ti-shopping-cart quickview-right__cart-icon"></span>
+                                <span class="quickview-right__cart-add">Add to cart</span>
+                            </div>
+                        </div>
+
+                        <p class="quickview-right__vendor">Vendor: <span>Yamaha</span></p>
+                        <p class="quickview-right__date">MFG: <span>April 5, 2023</span></p>
+                    </div>
+                </div>
+
+                <div class="grid wide">
+                    <div class="main-title">
+                        <p>Popular Products</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image one">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-label label-hot">
+
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Piano</p>
+                                    <p class="popular-product__item-name">Yamaha CLP-270</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $499.00
+                                            <span>$599.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image two">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-label label-sale">
+
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Orrgan & Keyboard</p>
+                                    <p class="popular-product__item-name">Casio Casiotone CT-S200</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $199.00
+                                            <span>$299.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image three">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-label label-new">
+
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Guitar</p>
+                                    <p class="popular-product__item-name">Taylor AD17E</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $399.00
+                                            <span>$499.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image four">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-label label-discount" data-discount="20">
+
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Ukulele</p>
+                                    <p class="popular-product__item-name">Ukulele KA-15S</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $399.00
+                                            <span>$499.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image five">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Cajon</p>
+                                    <p class="popular-product__item-name">Cajon TA-6</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $79.00
+                                            <span>$89.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image six">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Harmonica</p>
+                                    <p class="popular-product__item-name">Suzuki Study 24</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $29.00
+                                            <span>$39.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image seven">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-label label-discount" data-discount="25">
+
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Loa</p>
+                                    <p class="popular-product__item-name">Fender Acoustasonic 15</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $159.00
+                                            <span>$249.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="popular-product__item col l-3">
+                            <div class="popular-product__wrap-border">
+                                <div class="popular-product__item-image eight">
+                                    <div class="popular-product__item-action">
+                                        <a href="#" class="popular-product__action-wishlist">
+                                            <span class="popular-product__action-icon ti-heart"></span>
+                                            <p class="popular-product__action-des">Add To Wishlist</p>
+                                        </a>
+
+                                        <a href="#" class="popular-product__action-detail">
+                                            <span class="popular-product__action-icon ti-new-window"></span>
+                                            <p class="popular-product__action-des">Detail Product</p>
+                                        </a>
+
+                                        <div class="popular-product__action-quickview">
+                                            <span class="popular-product__action-icon ti-eye"></span>
+                                            <p class="popular-product__action-des">Quick View</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="popular-product__item-label label-sale">
+
+                                </div>
+
+                                <div class="popular-product__item-des">
+                                    <p class="popular-product__item-type">Accessory</p>
+                                    <p class="popular-product__item-name">Capo Musedo MC-1</p>
+                                    <div class="popular-product__item-rate">
+                                        
+                                        <div class="rate_stars">
+                                            <div class="rate_stars-wrap">
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon star--gold"></i>
+                                                <i class="fas fa-star rate_stars-icon"></i>
+                                            </div>
+                                            <span class="star-sold">200 sold</span>
+                                        </div>
+                                        <span class="fas fa-heart rate_heart"></span>
+                                    </div>
+                                    <div class="popular-product__item-bot">
+                                        <div class="popular-product__item-price">
+                                            $12.00
+                                            <span>$22.8</span>
+                                        </div>
+        
+                                        <div class="popular-product__item-cart">
+                                            <span class="ti-shopping-cart popuplar-product_cart-icon"></span>
+                                            <span class="popular-product_cart-add">Add</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog">
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__content">
+                <div class="footer__contact">
+
+                </div>
+
+                <div class="footer__map">
+
+                </div>
+
+                <div class="footer__link">
+
+                </div>
+
+                <div class="footer__end">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+    <script src="./assets/js/main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+</html>
