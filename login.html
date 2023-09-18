@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/footer/ft_4.png" type="image/x-icon" />
+    <title>Music Shop</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link href="./assets/icon/themify-icons/themify-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="main">
+        <div class="wrap">
+            <div class="login">
+                <div class="login__back display--none">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <a href="index.html" class="login__logo"></a>
+                <div class="login__title">
+                    <p class="login__title-signin">Đăng nhập <span>Music Shop</span></p>
+                </div>
+
+                <div class="login__method login-emailphone">
+                    <button class="login-emailphone-btn">
+                        <i class="ti-user"></i>
+                        <span>Sử dụng email / số điện thoại</span>
+                    </button>
+                </div>
+
+                <div class="login__method login-google">
+                    <button>
+                        <img src="assets/img/login/google.png" alt="">
+                        <span>Tiếp tục với Google</span>
+                    </button>
+                </div>
+
+                <div class="login__method login-facebook">
+                    <button>
+                        <img src="assets/img/login/facebook.png" alt="">
+                        <span>Tiếp tục với Facebook</span>
+                    </button>
+                </div>
+
+                <div class="login__method login-github">
+                    <button>
+                        <img src="assets/img/login/github.png" alt="">
+                        <span>Tiếp tục với Github</span>
+                    </button>
+                </div>
+
+                <div class="login__form display--none">
+                    
+                    <form class="login__form-wrap" id="form-1">
+                        <div class="login__form-header">
+                            <p class="login__form-header-phone">
+                                Số điện thoại
+                            </p>
+
+                            <p class="login__form-header-email display--none">
+                                Email
+                            </p>
+
+                            <p class="login__form-header-with--email">
+                                Đăng nhập với email
+                            </p>
+
+                            <p class="login__form-header-with--phone display--none">
+                                Đăng nhập với SĐT
+                            </p>
+                        </div>
+    
+                        <div class="input-wrap input-phone">
+                            <input id="phone" name="phone" type="text" placeholder="Số điện thoại">    
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="input-wrap input-email display--none">
+                            <input id="email" name="email" type="email" placeholder="Email">    
+                            <span class="form-message"></span>
+                        </div>
+    
+                        <div class="input-wrap input-password">
+                            <input id="password" name="pasword" type="password" placeholder="Nhập mật khẩu">   
+                            <span class="form-message"></span>
+                        </div>
+    
+                        <div class="login__form-button">
+                            <button>Đăng nhập</button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="login__register">
+                    <span>Bạn chưa có tài khoản?</span>
+                    <a href="register.html" class="login__register-btn login-convert">Đăng ký</a>
+                </div>
+
+                <div class="login__forgot display--none">
+                    <a href="#" class="login__forgot-btn login-convert">Quên mật khẩu?</a>
+                </div>
+
+                <div class="login__accept">
+                    Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với <br>
+                    <a href="#">Điều khoản sử dụng</a> của chúng tôi.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/login.js"></script>
+
+
+<script>
+    Validator(
+        {
+            form: '#form-1',
+            formGroupSelector: '.input-wrap',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#phone', 'Vui lòng nhập số điện thoại'),
+                Validator.isPhone('#phone'),
+                Validator.isRequired('#email', 'Vui lòng nhập Email'),
+                Validator.isEmail('#email'),    
+                Validator.isRequired('#password', 'Bạn chưa nhập mật khẩu'),
+            ],
+            onSubmit(data) {
+                console.log(data)
+            }
+        }
+    )
+</script>
+
+
+</html>
