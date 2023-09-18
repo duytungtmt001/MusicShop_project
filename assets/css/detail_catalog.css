@@ -9,7 +9,7 @@
 
 .banner-wrap {
     border-radius: 30px;
-    background-image: url(/assets/img/background/bg13.png);
+    background-image: url(../../assets/img/background/bg13.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 500px;
@@ -258,7 +258,7 @@
 }
 
 .category__filter-select-wrap {
-    background-image: url(/assets/img/footer/ft_1.png);
+    background-image: url(../../assets/img/footer/ft_1.png);
     background-size: 100px 100px;
     background-position: 95% 80%;
     background-repeat: no-repeat;
@@ -478,49 +478,49 @@
 }
 
 .popular-product__item-image.one {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-1.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-1.jpg);
 }
 
 .popular-product__item-image.two {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-2.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-2.jpg);
 }
 
 .popular-product__item-image.three {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-3.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-3.jpg);
 }
 
 .popular-product__item-image.four {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-4.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-4.jpg);
 }
 
 .popular-product__item-image.five {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-5.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-5.jpg);
 }
 
 .popular-product__item-image.six {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-6.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-6.jpg);
 }
 
 .popular-product__item-image.seven {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-7.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-7.jpg);
 }
 
 .popular-product__item-image.eight {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-8.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-8.jpg);
 }
 
 .popular-product__item-image.nine {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-9.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-9.jpg);
 }
 
 .popular-product__item-image.ten {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-10.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-10.jpg);
 }
 
 .popular-product__item-image.eleven {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-11.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-11.jpg);
 }
 
 .popular-product__item-image.twelve {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-12.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-12.jpg);
 }

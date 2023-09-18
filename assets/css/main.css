@@ -63,7 +63,7 @@ html {
 /******** PRE HEADER *******/
 
     .pre-header {
-        background-image: url(/assets/img/banner.png);
+        background-image: url(../../assets/img/banner.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 100vw;
@@ -2342,7 +2342,7 @@ html {
 
     /***** FOOTER TOP *****/
         .footer__top-content {
-            background-image: url(/assets/img/background/bg8.jpg);
+            background-image: url(../../assets/img/background/bg8.jpg);
             background-size: cover;
             height: 416px;
             border-radius: 20px;

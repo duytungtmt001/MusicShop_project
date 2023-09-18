@@ -104,7 +104,7 @@
 }
 
 .best-deals__wrap-background {
-    background-image: url(/assets/img/detail_product/post1.png);
+    background-image: url(../../assets/img/detail_product/post1.png);
     background-size: 100% 100%;
 }
 
@@ -163,15 +163,15 @@
 }
 
 .new-item__image.one {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-3.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-3.jpg);
 }
 
 .new-item__image.two {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-11.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-11.jpg);
 }
 
 .new-item__image.three {
-    background-image: url(/assets/img/detail-catalog/catalog-product/piano-6.jpg);
+    background-image: url(../../assets/img/detail-catalog/catalog-product/piano-6.jpg);
 }
 
 .new-item__info {
